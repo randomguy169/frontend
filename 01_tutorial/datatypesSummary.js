@@ -28,4 +28,8 @@ function myFunction() {
     console.log('Hello World!');
 }
 
-console.log( typeof bigInteger);
+console.log(typeof bigInteger);    
+
+
+//********************************************************************** */
+// types of memories are stack and heap memories

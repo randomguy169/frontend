@@ -26,13 +26,15 @@ const myArray = [0, 1, 2, 3, 4, 5];
 
 //slice, splice
 
-console.log("A, ", myArray);
+// console.log("A, ", myArray);
 
-const myna1 = myArray.slice(1, 3);
+// const myna1 = myArray.slice(1, 3);
 
-console.log(myna1);
-console.log("B ", myArray);
+// console.log(myna1);
+// console.log("B ", myArray);
 
-const myna2 = myArray.splice(1, 3);
-console.log(myna2);
+// const myna2 = myArray.splice(1, 3);
+// console.log(myna2);
 
+//slice returns a part of an array
+//splice returns a part of an array, but removes the part from the original array.

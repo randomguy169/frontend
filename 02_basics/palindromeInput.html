@@ -1,0 +1,37 @@
+<!-- Palindrome check -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome check</title>
+</head>
+
+<body>  
+    <form method="post">
+        <label>Enter a word to check if it is a palindrome or not
+            <input type="text" id="palInput" placeholder="Enter">
+        </label>
+
+        <button onclick="return palCheck()">Check</button>
+    </form>
+    <script>
+
+        function palCheck() {
+            let inputVal = document.getElementById('palInput').value.toLowerCase();
+
+            let tray = Array.from(inputVal);
+            let joinedString = tray.reverse().join("")
+            if (inputVal === joinedString) {
+                console.log('It is a palindrome');
+            } else {
+                console.log('It is not a palindrome');
+            }
+            return false;//prevents the page from reloading
+        }
+    </script>
+</body>
+
+</html>

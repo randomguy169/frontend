@@ -31,6 +31,7 @@ function myFunction() {
 console.log(typeof bigInteger);    
 
 
+
 //********************************************************************** */
 // types of memories are stack and heap memories
 

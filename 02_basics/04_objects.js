@@ -25,7 +25,7 @@ const myObj3 = Object.assign({}, myObj1,myObj2)
 
 const users = [
     {
-        name: "Amaan",
+        name: "coems",
         email: "coems@kellanbigmoeney.coem",
         phone: 2375234533
     }
@@ -34,7 +34,7 @@ const users = [
 // console.log(users[0].name);
 
 // console.log(Object.keys(fbUser));
-// console.log(Object.values(fbUser));x
+// console.log(Object.values(fbUser));
 // console.log(Object.entries(fbUser));
 
 console.log(fbUser.hasOwnProperty('name'));

@@ -18,4 +18,12 @@ function chai() {
     console.log(this.username);// this only works in objects and not in functions
 }
 
-chai();
+// chai();
+
+// const addTwo = (a, b) => {
+//     return a + b;
+// }
+
+console.log(addTwo(1, 2));
+
+const addTwo = (a, b) => a + b;

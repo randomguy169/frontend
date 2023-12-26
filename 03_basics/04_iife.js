@@ -7,3 +7,9 @@
 ((name) => {
     console.log(`DB CONNECTED ${name}`);
 })('Amaan');
+
+
+((name) => {
+    console.log(`DB connected ${name}`);
+})('Amaan')
+

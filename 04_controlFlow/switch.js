@@ -7,7 +7,11 @@
 //         break;
 // }
 
-const month = undefined;
+let name = new Date();
+
+let month = undefined;
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "Octomber", "November", "December"];
+
 switch (month) {
   case 1:
     console.log("January");
@@ -23,6 +27,6 @@ switch (month) {
     break;
 
   default:
-    console.log(Date.month());
+    console.log(months[name.getMonth()]);
     break;
 }

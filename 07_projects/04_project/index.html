@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+            color: aliceblue;
+            background-color: black;
+            margin-top: 5px;
+        }
+
+        .inputbox {
+            width: 250px;
+            height: 40px;
+            font-size: 24px;
+            align-items: center;
+            background-image: linear-gradient(to right, green, rgba(0, 255, 0, 0.5));
+        }
+    </style>
+</head>
+
+<body style="background-color: #212121; color: white;">
+    <center>
+        <h1>Guess the number</h1><br>
+        <h2>Attempts remaining:</h2>
+        <h2 id="attemptCount"></h2>
+
+      
+    </center>
+
+    <center><input type="number" class="inputbox"></center>
+    <center><button class="button" onclick="check()">Check</button></center>
+    <center>
+        <div class="message"></div>
+    </center>
+</body>
+<script src="index.js"></script>
+
+</html>

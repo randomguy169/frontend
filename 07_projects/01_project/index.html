@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour changing project | DOM</title>
+    <style>
+        .container-gray {
+
+            height: 100px;
+            width: 100px;
+            background-color: grey;
+            border-color: black;
+            border-width: 2px;
+            border-radius: 5px;
+            border-style: solid;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .container-white {
+
+            height: 100px;
+            width: 100px;
+            background-color: whitesmoke;
+            border-color: black;
+            border-width: 2px;
+            border-radius: 5px;
+            border-style: solid;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .container-blue {
+
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border-color: black;
+            border-width: 2px;
+            border-radius: 5px;
+            border-style: solid;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .container-yellow {
+
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            border-color: black;
+            border-width: 2px;
+            border-radius: 5px;
+            border-style: solid;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        button{
+            border: none;
+            background-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Color theme switcher</h1>
+    </center>
+    <div style="margin-left: 450px;" class="container-big">
+        <button id="turnGray" onclick="turnGray()">
+            <div class="container-gray"></div>
+        </button>
+        <button id="turnWhite" onclick="turnWhite()">
+            <div class="container-white"></div>
+        </button>
+        <button id="turnBlue" onclick="turnBlue()">
+            <div class="container-blue"></div>
+        </button>
+        <button id="turnYellow" onclick="turnYellow()">
+            <div class="container-yellow"></div>
+        </button>
+    </div>
+</body>
+<script>
+    function turnGray() {
+        document.body.style.backgroundColor = 'gray';
+    }
+    function turnWhite() {
+        document.body.style.backgroundColor = 'white'
+    }
+    function turnBlue() {
+        document.body.style.backgroundColor = 'blue'
+    }
+    function turnYellow() {
+        document.body.style.backgroundColor = 'yellow'
+    }
+</script>
+</html>
+
+<!-- Project sukces! -->

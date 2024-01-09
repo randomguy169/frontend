@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@900&family=Martian+Mono:wght@800&family=Noto+Sans:wght@300&family=Onest:wght@300;400;900&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            overflow-y: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+        }
+
+        #yes {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            /* to blur an image use the following */
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            /* background-image: linear-gradient( */
+
+        }
+
+        .container-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .passwordBox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        #password {
+            width: 40vh;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.3);
+            border: none;
+        }
+
+        #submit {
+            height: 35px;
+            margin-right: 200px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #8686864a;
+            color: white;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: #7979794a;
+            cursor: default;
+        }
+
+        .profileName {
+            font-size: 35px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: rgba(255, 255, 255, 0.3);
+            border: none;
+        }
+
+        .profilePic {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStebsxqWlZsg6lMZdGvGymGYZWPn-lQhoBcK-i59Tm8g&s");
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <img id="yes"
+        src="https://e0.pxfuel.com/wallpapers/506/850/desktop-wallpaper-hacking-hacker-abstract-sadic-dark-anarchy-hacker-mask.jpg"
+        alt="abcImage">
+
+    <div class="container-center">
+        <div class="profilePic"></div>
+        <div class="profileName">Haidar</div>
+        <div class="passwordBox" style="margin-left: 200px;">
+            <input type="number" id="password" max="999" onkeypress="if (this.value.length > 3) return false;" />
+            <button name="submit" id="submit"><i class="fas fa-arrow-right"></i> </button>
+        </div>
+    </div>
+
+</body>
+<script>
+    // const password = document.getElementById("password");
+    const submit = document.getElementById("submit");
+    // const body = document.body;
+    // const yes = document.getElementById("yes");
+
+    submit.addEventListener("click", () => {
+        document.body.innerHTML = "<img src='image.jpg' style='width: 100%; height: 100%; object-fit: cover;'>";
+        const password = document.getElementById("password").value;
+        console.log(password);
+    })
+
+</script>
+
+</html>

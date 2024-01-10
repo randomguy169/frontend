@@ -19,19 +19,19 @@
         let R = Math.floor(Math.random() * 255);
         let G = Math.floor(Math.random() * 255);
         let B = Math.floor(Math.random() * 255);
-        document.body.style.backgroundColor = `rgb(${R}, ${G},${B})`;
+        document.body.style.backgroundColor = `rgb(${R}, ${G}, ${B})`;
+        console.log(R, G, B);
     }
     const button = document.querySelector('#startButton');
     button.addEventListener('click', function () {
-        setInterval(changeColor, 2000);
+        setInterval(changeColor, 1);
+    })
+    const stopButton = document.querySelector('#stopButton');
+    stopButton.addEventListener('click', function () {
+        clearInterval(changeColor);
+
     })
 
-    const stopButton = document.querySelector("#stopButton");
-    const stopChange = function(){}
-    stopButton.addEventListener('click', stopChange)
-
-    const newDiv = document.createElement('div');
-    newDiv.innerHTML = ``
 </script>
 
 </html>

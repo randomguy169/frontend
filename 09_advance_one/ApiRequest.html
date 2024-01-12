@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>random body </h1>
 </body>
+<script>
+    reqLink = 'https://api.github.com/users/randomguy169';
+    xhr = new XMLHttpRequest();
+    xhr.open('GET', reqLink);
+    xhr.onreadystatechange = function(){
+        if ( xhr.readyState ===4){
+            const data = JSON.parse(this.responseText);
+            console.log(data.name);
+        }
+    }
+</script>
 </html>

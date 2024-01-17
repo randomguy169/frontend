@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
       .content {
-        width: 500px;
+        width: 800px;
         height: 50px;
         font-size: xx-large;
         background-color: #36454f;
@@ -40,37 +40,14 @@
         user-select: none;
       }
     </style>
+    <script src="app.js" defer></script>
   </head>
   <body>
     <center>
-      <h1>Press any key to generate a random color!</h1>
+      <h1 id="headerElement">Press any key to generate a random color!</h1>
       <button class="content">
         Background color: <span id="color"></span>
       </button>
     </center>
   </body>
-  <script>
-    const colorName = document.querySelector("#color");
-    const button = document.querySelector(".content");
-    // console.log(colorName);
-    const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-
-    button.addEventListener("click", () => {
-      hexColor = "#";
-      for (let i = 0; i < 6; i++) {
-        hexColor += hex[Math.floor(Math.random() * 16)];
-      }
-      document.body.style.backgroundColor = hexColor;
-      colorName.innerHTML = hexColor;
-    });
-
-    button.onkeyup = () => {
-      hexColor = "#";
-      for (let i = 0; i < 6; i++) {
-        hexColor += hex[Math.floor(Math.random() * 16)];
-      }
-      document.body.style.backgroundColor = hexColor;
-      colorName.innerHTML = hexColor;
-    };
-  </script>
 </html>

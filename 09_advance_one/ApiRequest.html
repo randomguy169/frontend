@@ -15,19 +15,23 @@
     4 DONE The operation is complete.
 </body>
 <script>
-    const reqURL = 'https://api.github.com/users/randomguy169'
-    const request = new XMLHttpRequest();
-    request.open('GET', reqURL);
-    request.onreadystatechange = function () {
-        console.log(request.readyState);    
-        if (request.readyState === 4) {
-            const data = JSON.parse(this.responseText);//convert to json type
-            // console.log(typeof data);
-            console.log(data.avatar_url);
+    const reqURL = 'https://api.github.com/users/randomguy169';
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', reqURL);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText);
+            console.log(data.name);
         }
     }
+    
 
-    request.send()
+
+
+
+
+
+    xhr.send();
 </script>
 
 </html>

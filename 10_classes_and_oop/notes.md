@@ -4,22 +4,23 @@
 
 ## Object
 
-- collection properties and methods
+- Collection of properties and methods
+- toLowerCase
 
-## why use OOP
+## Why use OOP
 
-## parts of OOP
+## Parts of OOP
 
-Object literal{}
+Object literal
 
-- Constructor function
-- Prototypes
-- Classes
-- Instances(new, this)
+- Constructor function (new)
+- Prototypes (this)
+- Classes (new, this)
+- Instances (new, this)
 
 ## 4 pillars
 
-Abstraction
-Encapsulation
-Inheritance
-Polymorphism
+- Encapsulation
+- Abstraction
+- Inheritance
+- Polymorphism

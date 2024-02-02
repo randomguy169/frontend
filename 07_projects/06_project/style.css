@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+  }
+
+  #input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  #submitButton {
+    width: 18%;
+    margin-left: 1%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #5C6BC0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #submitButton:hover {
+    background-color: #3F51B5;
+  }
+
+  #List {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  #List li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    border-left: 5px solid #3F51B5;
+    position: relative;
+  }
+
+  #List li:hover {
+    border-left: 5px solid #303F9F;
+  }
+
+  .cross {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .striked-li {
+    text-decoration: line-through;
+    color: #bbb;
+  }
+
+  ul li {
+    background-color: white;
+  }
+  
+  ul li:nth-child(odd){
+    background-color: rgb(189, 189, 189);
+  }
